@@ -50,4 +50,5 @@ if __name__ == '__main__':
     print('script has been finished')
     print(f'OUTPUT XML="{OUTPUT_XML}"')
     print('-'*32)
+
     

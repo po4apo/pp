@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Сотрудники</title>
+
+</head>
+<body>
+<div class="form">
+<form name = "form"action="">
+<div class="input_text">
+    <label>
+        Номер сотрудника:
+        <input type="text" name="num" onmouseover="set_placeholder( event ,'')" onmouseout="set_placeholder(event ,'Номер')" placeholder="Номер" >
+
+    </label>
+    <input type="submit" onclick="check_num()" value="Подтвердить">
+</div>
+<div class="input_text">
+    <label>
+        Имя сотрудника:
+        <input onmouseover="set_placeholder(event, '')" onmouseout="set_placeholder(event, 'Имя')" placeholder="Имя">
+    </label>
+    <input type="submit"  value="Подтвердить">
+
+</div>
+    <button onclick=""  value="Найти"  class="search">НАйти</button>
+
+</form>
+</div>
+
+<div class="create_new_employ">
+    <a href="" id="name-btn">Создать нового сотрудника</a>
+</div>
+
+<table id = "table_with_employ" border="">
+<tbody id="table-body">
+        <tr>
+            <th></th>
+            <th>Номер сотрудника</th>
+            <th>Имя</th>
+            <th>Должность</th>
+            <th>Дата принятия на работу</th>
+            <th>Департмент</th>
+            <th>Удалить</th>
+
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>0</td>
+            <td>Илья</td>
+            <td>Программист</td>
+            <td>12.12.2012</td>
+            <td>Разработка</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>1</td>
+            <td>Илья</td>
+            <td>Программист</td>
+            <td>12.12.2012</td>
+            <td>Разработка</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>2</td>
+            <td>Виктор</td>
+            <td>Программист</td>
+            <td>12.12.2012</td>
+            <td>Разработка</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>3</td>
+            <td>Владимир</td>
+            <td>Программист</td>
+            <td>12.12.2012</td>
+            <td>Разработка</td>
+            <td><a href="" onclick="delete_row(3)">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>4</td>
+            <td>Пётр</td>
+            <td>Программист</td>
+            <td>12.12.2012</td>
+            <td>Разработка</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>5</td>
+            <td>Анна</td>
+            <td>Дизайнер</td>
+            <td>12.12.2012</td>
+            <td>Отдел дизайн</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>6</td>
+            <td>Оля</td>
+            <td>Дизайнер</td>
+            <td>12.12.2012</td>
+            <td>Отдел дизайн</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>7</td>
+            <td>Вера</td>
+            <td>Дизайнер</td>
+            <td>12.12.2012</td>
+            <td>Отдел дизайн</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>8</td>
+            <td>Толя</td>
+            <td>Дизайнер</td>
+            <td>12.12.2012</td>
+            <td>Отдел дизайн</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>9</td>
+            <td>Гена</td>
+            <td>Кадровик</td>
+            <td>12.12.2012</td>
+            <td>Набор кадров</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>9</td>
+            <td>Валера</td>
+            <td>Кадровик</td>
+            <td>12.12.2012</td>
+            <td>Набор кадров</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>10</td>
+            <td>Лена</td>
+            <td>Кадровик</td>
+            <td>12.12.2012</td>
+            <td>Набор кадров</td>
+            <td><a href="">Удалить</a></td>
+        </tr>
+</tbody>
+</table>
+
+
+<script src="script.js"></script>
+</body>
+</html>
